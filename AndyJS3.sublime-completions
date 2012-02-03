@@ -307,8 +307,8 @@
         { "trigger": "addColorStop() CanvasGradient", "contents": "addColorStop(${2:offset}, ${3:color})" },
 
         // Static Date methods
-        { "trigger": "parse()               Date", "contents": "${TM_CURRENT_LINE/.+\\.$|(.*)/(?1: Date\\.)/}parse(${1:datestring})" },
-        { "trigger": "UTC()                 Date", "contents": "${TM_CURRENT_LINE/.+\\.$|(.*)/(?1:D ate\\.)/}parse(${1:yr}, ${2:mon}${3:[, day]}${4:[, hr]}${5:[, min]}${6:[, sec]}${7:[, ms]})" },
+        { "trigger": "parse()               Date", "contents": "${TM_CURRENT_LINE/.+\\.$|(.*)/(?1:Date\\.)/}parse(${1:datestring})" },
+        { "trigger": "UTC()                 Date", "contents": "${TM_CURRENT_LINE/.+\\.$|(.*)/(?1:Date\\.)/}UTC(${1:yr}, ${2:mon}${3:[, day]}${4:[, hr]}${5:[, min]}${6:[, sec]}${7:[, ms]})" },
 
         { "trigger": "getDate()             Date", "contents": "getDate()" },
         { "trigger": "getDay()              Date", "contents": "getDay()" },
