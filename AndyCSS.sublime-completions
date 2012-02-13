@@ -1,0 +1,277 @@
+{
+    "scope": "source.css meta.property-list.css",      // - comment.block.css ?
+
+    "completions": [
+          { "trigger": "background", "contents": "background: ${1:_colourz} ${2:position} ${3:size} ${4:repeat} ${5:origin} ${6:clip} ${7:attachment} ${8:image};$0" },
+          { "trigger": "backgroundAttachment", "contents": "background-attachment: ${1:Fixed/Scroll}${1/(f$)|(fi$)|(s$)|(sc$)|.*/?1:ixed:?2:xed:?3:croll:?4:roll/i};$0" },
+          { "trigger": "backgroundClip", "contents": "background-clip: ${1:Border-Content-Padding}${1/(b$)|(bo$)|(c$)|(co$)|(p$)|(pa$)|.*/?1:order:?2:rder:?3:ontent:?4:ntent:?5:adding:?6:dding/i}-box;$0" },
+          { "trigger": "backgroundColor", "contents": "background-color: ${1:_colourz}${1/(a$)|(az$)|(b$)|(be$)|(bl$)|(br$)|(c$)|(ch$)|(f$)|(g$)|(gr$)|(go$)|(l$)|(m$)|(ma$)|(n$)|(o$)|(or$)|(p$)|(pl$)|(pu$)|(r$)|(s$)|(t$)|(v$)|(w$)|(y$)|(tr$)|.*/?1:qua:?2:ure:?3:lue:?4:ige:?5:ack:?6:own:?7:yan:?8:ocolate:?9:uchsia:?10:ray:?11:een:?12:ld:?13:ime:?14:aroon:?15:genta:?16:avy:?17:live:?18:ange:?19:ink:?20:um:?21:rple:?22:ed:?23:ilver:?24:eal:?25:iolet:?26:hite:?27:ellow:?28:ansparent/i};$0" },     // additional -transparent
+
+          { "trigger": "backgroundImage", "contents": "background-image: ${1:url($2)}${1/.+|($)/(?1:none)/};$0" },
+          { "trigger": "backgroundOrigin", "contents": "background-origin: ${1:Border-Content-Padding}${1/(b$)|(bo$)|(c$)|(co$)|(p$)|(pa$)|.*/?1:order:?2:rder:?3:ontent:?4:ntent:?5:adding:?6:dding/i}-box;$0" },
+          { "trigger": "backgroundPosition", "contents": "background-position: ${1:Left/Center/Right}${1/(l$)|(c$)|(r$)|.*/?1:eft:?2:enter:?3:ight/i} ${2:Top/Center/Bottom}${2/(t$)|(c$)|(b$)|.*/?1:op:?2:enter:?3:ottom/i};$0" },
+          { "trigger": "backgroundRepeat", "contents": "background-repeat: ${1/([xy]$)|.*/?1:repeat-/}${1:No-repeat/Repeat/repeat-X/repeat-Y}${1/(r$)|(n$)|(no$)|.*/(?1:epeat:?2:o-repeat:?3:-repeat/i};$0" },
+          { "trigger": "backgroundSize", "contents": "background-size: ${1:Cover/COntain/Auto}${1/(c$)|(co$)|(a$)|(au$)|(aut$)|.*/?1:over:?2:ntain:?3:uto:?4:to:?5:o/i}${1/(a|au|aut|auto)$|([0-9.]+[a-z]+|[0-9.]+\\%)|.*/?1: auto:?2: $2/i};$0" },
+
+          // { "trigger": "border", "contents": "border: ${1:_bwidf} ${2:_bstylz} ${3:_colourz};$0" },
+          { "trigger": "border", "contents": "border: ${1:Medium/Thin/THick}${1/(m$)|(me$)|(t$)|(th$)|(thi$)|.*/?1:edium:?2:dium:?3:hin:?4:ick:?5:ck/i} ${2:DAshed/DOtted/Double/Groove/Hidden/Inset/Outset/Ridge/Solid/None}${2/(da$)|(do$)|(d$)|(g$)|(h$)|(i$)|(o$)|(r$)|(s$)|(n$)|(no$)|.*/?1:shed:?2:tted:?3:ouble:?4:roove:?5:idden:?6:nset:?7:utset:?8:idge:?9:olid:?10:one:?11:ne/i} ${3:_colourz}${3/(a$)|(az$)|(b$)|(be$)|(bl$)|(br$)|(c$)|(ch$)|(f$)|(g$)|(gr$)|(go$)|(l$)|(m$)|(ma$)|(n$)|(o$)|(or$)|(p$)|(pl$)|(pu$)|(r$)|(s$)|(t$)|(v$)|(w$)|(y$)|(tr$)|.*/?1:qua:?2:ure:?3:lue:?4:ige:?5:ack:?6:own:?7:yan:?8:ocolate:?9:uchsia:?10:ray:?11:een:?12:ld:?13:ime:?14:aroon:?15:genta:?16:avy:?17:live:?18:ange:?19:ink:?20:um:?21:rple:?22:ed:?23:ilver:?24:eal:?25:iolet:?26:hite:?27:ellow:?28:ansparent/i};$0" },
+
+          { "trigger": "borderBottom", "contents": "border-bottom: ${1:Medium/Thin/THick}${1/(m$)|(me$)|(t$)|(th$)|(thi$)|.*/?1:edium:?2:dium:?3:hin:?4:ick:?5:ck/i} ${2:DAshed/DOtted/Double/Groove/Hidden/Inset/Outset/Ridge/Solid/None}${2/(da$)|(do$)|(d$)|(g$)|(h$)|(i$)|(o$)|(r$)|(s$)|(n$)|(no$)|.*/?1:shed:?2:tted:?3:ouble:?4:roove:?5:idden:?6:nset:?7:utset:?8:idge:?9:olid:?10:one:?11:ne/i} ${3:_colourz}${3/(a$)|(az$)|(b$)|(be$)|(bl$)|(br$)|(c$)|(ch$)|(f$)|(g$)|(gr$)|(go$)|(l$)|(m$)|(ma$)|(n$)|(o$)|(or$)|(p$)|(pl$)|(pu$)|(r$)|(s$)|(t$)|(v$)|(w$)|(y$)|(tr$)|.*/?1:qua:?2:ure:?3:lue:?4:ige:?5:ack:?6:own:?7:yan:?8:ocolate:?9:uchsia:?10:ray:?11:een:?12:ld:?13:ime:?14:aroon:?15:genta:?16:avy:?17:live:?18:ange:?19:ink:?20:um:?21:rple:?22:ed:?23:ilver:?24:eal:?25:iolet:?26:hite:?27:ellow:?28:ansparent/i};$0" },
+
+          { "trigger": "borderBottomColor", "contents": "border-bottom-color: ${1:_colourz}${1/(a$)|(az$)|(b$)|(be$)|(bl$)|(br$)|(c$)|(ch$)|(f$)|(g$)|(gr$)|(go$)|(l$)|(m$)|(ma$)|(n$)|(o$)|(or$)|(p$)|(pl$)|(pu$)|(r$)|(s$)|(t$)|(v$)|(w$)|(y$)|(tr$)|.*/?1:qua:?2:ure:?3:lue:?4:ige:?5:ack:?6:own:?7:yan:?8:ocolate:?9:uchsia:?10:ray:?11:een:?12:ld:?13:ime:?14:aroon:?15:genta:?16:avy:?17:live:?18:ange:?19:ink:?20:um:?21:rple:?22:ed:?23:ilver:?24:eal:?25:iolet:?26:hite:?27:ellow:?28:ansparent/i};$0" },
+
+          { "trigger": "borderBottomStyle", "contents": "border-bottom-style: ${1:DAshed/DOtted/Double/Groove/Hidden/Inset/Outset/Ridge/Solid/None}${1/(da$)|(do$)|(d$)|(g$)|(h$)|(i$)|(o$)|(r$)|(s$)|(n$)|(no$)|.*/?1:shed:?2:tted:?3:ouble:?4:roove:?5:idden:?6:nset:?7:utset:?8:idge:?9:olid:?10:one:?11:ne/i};$0" },
+          
+          { "trigger": "borderBottomWidth", "contents": "border-bottom-width: ${1:Medium/Thin/THick}${1/(m$)|(me$)|(t$)|(th$)|(thi$)|.*/?1:edium:?2:dium:?3:hin:?4:ick:?5:ck/i};$0" },
+
+          { "trigger": "borderCollapse", "contents": "border-collapse: ${1:Collapse/Separate}${1/(c$)|(s$)|(co$)|(se$)|.*/?1:ollapse:?2:eparate:?3:llapse:?4:parate/i};$0" },
+
+          { "trigger": "borderColor", "contents": "border-color: ${1:_colourz}${1/(a$)|(az$)|(b$)|(be$)|(bl$)|(br$)|(c$)|(ch$)|(f$)|(g$)|(gr$)|(go$)|(l$)|(m$)|(ma$)|(n$)|(o$)|(or$)|(p$)|(pl$)|(pu$)|(r$)|(s$)|(t$)|(v$)|(w$)|(y$)|(tr$)|.*/?1:qua:?2:ure:?3:lue:?4:ige:?5:ack:?6:own:?7:yan:?8:ocolate:?9:uchsia:?10:ray:?11:een:?12:ld:?13:ime:?14:aroon:?15:genta:?16:avy:?17:live:?18:ange:?19:ink:?20:um:?21:rple:?22:ed:?23:ilver:?24:eal:?25:iolet:?26:hite:?27:ellow:?28:ansparent/i};$0" },
+
+          { "trigger": "borderColor4", "contents": "border-color: ${1:_colourz}${1/(a$)|(az$)|(b$)|(be$)|(bl$)|(br$)|(c$)|(ch$)|(f$)|(g$)|(gr$)|(go$)|(l$)|(m$)|(ma$)|(n$)|(o$)|(or$)|(p$)|(pl$)|(pu$)|(r$)|(s$)|(t$)|(v$)|(w$)|(y$)|(tr$)|.*/?1:qua:?2:ure:?3:lue:?4:ige:?5:ack:?6:own:?7:yan:?8:ocolate:?9:uchsia:?10:ray:?11:een:?12:ld:?13:ime:?14:aroon:?15:genta:?16:avy:?17:live:?18:ange:?19:ink:?20:um:?21:rple:?22:ed:?23:ilver:?24:eal:?25:iolet:?26:hite:?27:ellow:?28:ansparent/i} ${2:_colourz}${2/(a$)|(az$)|(b$)|(be$)|(bl$)|(br$)|(c$)|(ch$)|(f$)|(g$)|(gr$)|(go$)|(l$)|(m$)|(ma$)|(n$)|(o$)|(or$)|(p$)|(pl$)|(pu$)|(r$)|(s$)|(t$)|(v$)|(w$)|(y$)|(tr$)|.*/?1:qua:?2:ure:?3:lue:?4:ige:?5:ack:?6:own:?7:yan:?8:ocolate:?9:uchsia:?10:ray:?11:een:?12:ld:?13:ime:?14:aroon:?15:genta:?16:avy:?17:live:?18:ange:?19:ink:?20:um:?21:rple:?22:ed:?23:ilver:?24:eal:?25:iolet:?26:hite:?27:ellow:?28:ansparent/i} ${3:_colourz}${3/(a$)|(az$)|(b$)|(be$)|(bl$)|(br$)|(c$)|(ch$)|(f$)|(g$)|(gr$)|(go$)|(l$)|(m$)|(ma$)|(n$)|(o$)|(or$)|(p$)|(pl$)|(pu$)|(r$)|(s$)|(t$)|(v$)|(w$)|(y$)|(tr$)|.*/?1:qua:?2:ure:?3:lue:?4:ige:?5:ack:?6:own:?7:yan:?8:ocolate:?9:uchsia:?10:ray:?11:een:?12:ld:?13:ime:?14:aroon:?15:genta:?16:avy:?17:live:?18:ange:?19:ink:?20:um:?21:rple:?22:ed:?23:ilver:?24:eal:?25:iolet:?26:hite:?27:ellow:?28:ansparent/i} ${4:_colourz}${4/(a$)|(az$)|(b$)|(be$)|(bl$)|(br$)|(c$)|(ch$)|(f$)|(g$)|(gr$)|(go$)|(l$)|(m$)|(ma$)|(n$)|(o$)|(or$)|(p$)|(pl$)|(pu$)|(r$)|(s$)|(t$)|(v$)|(w$)|(y$)|(tr$)|.*/?1:qua:?2:ure:?3:lue:?4:ige:?5:ack:?6:own:?7:yan:?8:ocolate:?9:uchsia:?10:ray:?11:een:?12:ld:?13:ime:?14:aroon:?15:genta:?16:avy:?17:live:?18:ange:?19:ink:?20:um:?21:rple:?22:ed:?23:ilver:?24:eal:?25:iolet:?26:hite:?27:ellow:?28:ansparent/i};$0" },
+
+          { "trigger": "borderLeft", "contents": "border-left: ${1:Medium/Thin/THick}${1/(m$)|(me$)|(t$)|(th$)|(thi$)|.*/?1:edium:?2:dium:?3:hin:?4:ick:?5:ck/i} ${2:DAshed/DOtted/Double/Groove/Hidden/Inset/Outset/Ridge/Solid/None}${2/(da$)|(do$)|(d$)|(g$)|(h$)|(i$)|(o$)|(r$)|(s$)|(n$)|(no$)|.*/?1:shed:?2:tted:?3:ouble:?4:roove:?5:idden:?6:nset:?7:utset:?8:idge:?9:olid:?10:one:?11:ne/i} ${3:_colourz}${3/(a$)|(az$)|(b$)|(be$)|(bl$)|(br$)|(c$)|(ch$)|(f$)|(g$)|(gr$)|(go$)|(l$)|(m$)|(ma$)|(n$)|(o$)|(or$)|(p$)|(pl$)|(pu$)|(r$)|(s$)|(t$)|(v$)|(w$)|(y$)|(tr$)|.*/?1:qua:?2:ure:?3:lue:?4:ige:?5:ack:?6:own:?7:yan:?8:ocolate:?9:uchsia:?10:ray:?11:een:?12:ld:?13:ime:?14:aroon:?15:genta:?16:avy:?17:live:?18:ange:?19:ink:?20:um:?21:rple:?22:ed:?23:ilver:?24:eal:?25:iolet:?26:hite:?27:ellow:?28:ansparent/i};$0" },
+
+          { "trigger": "borderLeftColor", "contents": "border-left-color: ${1:_colourz}${1/(a$)|(az$)|(b$)|(be$)|(bl$)|(br$)|(c$)|(ch$)|(f$)|(g$)|(gr$)|(go$)|(l$)|(m$)|(ma$)|(n$)|(o$)|(or$)|(p$)|(pl$)|(pu$)|(r$)|(s$)|(t$)|(v$)|(w$)|(y$)|(tr$)|.*/?1:qua:?2:ure:?3:lue:?4:ige:?5:ack:?6:own:?7:yan:?8:ocolate:?9:uchsia:?10:ray:?11:een:?12:ld:?13:ime:?14:aroon:?15:genta:?16:avy:?17:live:?18:ange:?19:ink:?20:um:?21:rple:?22:ed:?23:ilver:?24:eal:?25:iolet:?26:hite:?27:ellow:?28:ansparent/i};$0" },
+
+          { "trigger": "borderLeftStyle", "contents": "border-left-style: ${1:DAshed/DOtted/Double/Groove/Hidden/Inset/Outset/Ridge/Solid/None}${1/(da$)|(do$)|(d$)|(g$)|(h$)|(i$)|(o$)|(r$)|(s$)|(n$)|(no$)|.*/?1:shed:?2:tted:?3:ouble:?4:roove:?5:idden:?6:nset:?7:utset:?8:idge:?9:olid:?10:one:?11:ne/i};$0" },
+
+          { "trigger": "borderLeftWidth", "contents": "border-left-width: ${1:Medium/Thin/THick}${1/(m$)|(me$)|(t$)|(th$)|(thi$)|.*/?1:edium:?2:dium:?3:hin:?4:ick:?5:ck/i};$0" },
+
+          { "trigger": "borderRight", "contents": "border-right: ${1:Medium/Thin/THick}${1/(m$)|(me$)|(t$)|(th$)|(thi$)|.*/?1:edium:?2:dium:?3:hin:?4:ick:?5:ck/i} ${2:DAshed/DOtted/Double/Groove/Hidden/Inset/Outset/Ridge/Solid/None}${2/(da$)|(do$)|(d$)|(g$)|(h$)|(i$)|(o$)|(r$)|(s$)|(n$)|(no$)|.*/?1:shed:?2:tted:?3:ouble:?4:roove:?5:idden:?6:nset:?7:utset:?8:idge:?9:olid:?10:one:?11:ne/i} ${3:_colourz}${3/(a$)|(az$)|(b$)|(be$)|(bl$)|(br$)|(c$)|(ch$)|(f$)|(g$)|(gr$)|(go$)|(l$)|(m$)|(ma$)|(n$)|(o$)|(or$)|(p$)|(pl$)|(pu$)|(r$)|(s$)|(t$)|(v$)|(w$)|(y$)|(tr$)|.*/?1:qua:?2:ure:?3:lue:?4:ige:?5:ack:?6:own:?7:yan:?8:ocolate:?9:uchsia:?10:ray:?11:een:?12:ld:?13:ime:?14:aroon:?15:genta:?16:avy:?17:live:?18:ange:?19:ink:?20:um:?21:rple:?22:ed:?23:ilver:?24:eal:?25:iolet:?26:hite:?27:ellow:?28:ansparent/i};$0" },
+
+          { "trigger": "borderRightColor", "contents": "border-right-color: ${1:_colourz}${1/(a$)|(az$)|(b$)|(be$)|(bl$)|(br$)|(c$)|(ch$)|(f$)|(g$)|(gr$)|(go$)|(l$)|(m$)|(ma$)|(n$)|(o$)|(or$)|(p$)|(pl$)|(pu$)|(r$)|(s$)|(t$)|(v$)|(w$)|(y$)|(tr$)|.*/?1:qua:?2:ure:?3:lue:?4:ige:?5:ack:?6:own:?7:yan:?8:ocolate:?9:uchsia:?10:ray:?11:een:?12:ld:?13:ime:?14:aroon:?15:genta:?16:avy:?17:live:?18:ange:?19:ink:?20:um:?21:rple:?22:ed:?23:ilver:?24:eal:?25:iolet:?26:hite:?27:ellow:?28:ansparent/i};$0" },
+
+          { "trigger": "borderRightStyle", "contents": "border-right-style: ${1:DAshed/DOtted/Double/Groove/Hidden/Inset/Outset/Ridge/Solid/None}${1/(da$)|(do$)|(d$)|(g$)|(h$)|(i$)|(o$)|(r$)|(s$)|(n$)|(no$)|.*/?1:shed:?2:tted:?3:ouble:?4:roove:?5:idden:?6:nset:?7:utset:?8:idge:?9:olid:?10:one:?11:ne/i};$0" },
+
+          { "trigger": "borderRightWidth", "contents": "border-right-width: ${1:Medium/Thin/THick}${1/(m$)|(me$)|(t$)|(th$)|(thi$)|.*/?1:edium:?2:dium:?3:hin:?4:ick:?5:ck/i};$0" },
+          
+          { "trigger": "borderSpacing", "contents": "border-spacing: ${1:0};$0" },
+
+          { "trigger": "borderStyle", "contents": "border-style: ${1:DAshed/DOtted/Double/Groove/Hidden/Inset/Outset/Ridge/Solid/None}${1/(da$)|(do$)|(d$)|(g$)|(h$)|(i$)|(o$)|(r$)|(s$)|(n$)|(no$)|.*/?1:shed:?2:tted:?3:ouble:?4:roove:?5:idden:?6:nset:?7:utset:?8:idge:?9:olid:?10:one:?11:ne/i};$0" },
+
+          { "trigger": "borderStyle4", "contents": "border-style: ${1:DAshed/DOtted/Double/Groove/Hidden/Inset/Outset/Ridge/Solid/None}${1/(da$)|(do$)|(d$)|(g$)|(h$)|(i$)|(o$)|(r$)|(s$)|(n$)|(no$)|.*/?1:shed:?2:tted:?3:ouble:?4:roove:?5:idden:?6:nset:?7:utset:?8:idge:?9:olid:?10:one:?11:ne/i} ${2:_bstylz}${2/(da$)|(do$)|(d$)|(g$)|(h$)|(i$)|(o$)|(r$)|(s$)|(n$)|(no$)|.*/?1:shed:?2:tted:?3:ouble:?4:roove:?5:idden:?6:nset:?7:utset:?8:idge:?9:olid:?10:one:?11:ne/i} ${3:_bstylz}${3/(da$)|(do$)|(d$)|(g$)|(h$)|(i$)|(o$)|(r$)|(s$)|(n$)|(no$)|.*/?1:shed:?2:tted:?3:ouble:?4:roove:?5:idden:?6:nset:?7:utset:?8:idge:?9:olid:?10:one:?11:ne/i} ${4:_bstylz}${4/(da$)|(do$)|(d$)|(g$)|(h$)|(i$)|(o$)|(r$)|(s$)|(n$)|(no$)|.*/?1:shed:?2:tted:?3:ouble:?4:roove:?5:idden:?6:nset:?7:utset:?8:idge:?9:olid:?10:one:?11:ne/i};$0" },
+
+          { "trigger": "borderTop", "contents": "border-top: ${1:Medium/Thin/THick}${1/(m$)|(me$)|(t$)|(th$)|(thi$)|.*/?1:edium:?2:dium:?3:hin:?4:ick:?5:ck/i} ${2:DAshed/DOtted/Double/Groove/Hidden/Inset/Outset/Ridge/Solid/None}${2/(da$)|(do$)|(d$)|(g$)|(h$)|(i$)|(o$)|(r$)|(s$)|(n$)|(no$)|.*/?1:shed:?2:tted:?3:ouble:?4:roove:?5:idden:?6:nset:?7:utset:?8:idge:?9:olid:?10:one:?11:ne/i} ${3:_colourz}${3/(a$)|(az$)|(b$)|(be$)|(bl$)|(br$)|(c$)|(ch$)|(f$)|(g$)|(gr$)|(go$)|(l$)|(m$)|(ma$)|(n$)|(o$)|(or$)|(p$)|(pl$)|(pu$)|(r$)|(s$)|(t$)|(v$)|(w$)|(y$)|(tr$)|.*/?1:qua:?2:ure:?3:lue:?4:ige:?5:ack:?6:own:?7:yan:?8:ocolate:?9:uchsia:?10:ray:?11:een:?12:ld:?13:ime:?14:aroon:?15:genta:?16:avy:?17:live:?18:ange:?19:ink:?20:um:?21:rple:?22:ed:?23:ilver:?24:eal:?25:iolet:?26:hite:?27:ellow:?28:ansparent/i};$0" },
+
+          { "trigger": "borderTopColor", "contents": "border-top-color: ${1:_colourz}${1/(a$)|(az$)|(b$)|(be$)|(bl$)|(br$)|(c$)|(ch$)|(f$)|(g$)|(gr$)|(go$)|(l$)|(m$)|(ma$)|(n$)|(o$)|(or$)|(p$)|(pl$)|(pu$)|(r$)|(s$)|(t$)|(v$)|(w$)|(y$)|(tr$)|.*/?1:qua:?2:ure:?3:lue:?4:ige:?5:ack:?6:own:?7:yan:?8:ocolate:?9:uchsia:?10:ray:?11:een:?12:ld:?13:ime:?14:aroon:?15:genta:?16:avy:?17:live:?18:ange:?19:ink:?20:um:?21:rple:?22:ed:?23:ilver:?24:eal:?25:iolet:?26:hite:?27:ellow:?28:ansparent/i};$0" },
+
+          { "trigger": "borderTopStyle", "contents": "border-top-style: ${1:DAshed/DOtted/Double/Groove/Hidden/Inset/Outset/Ridge/Solid/None}${1/(da$)|(do$)|(d$)|(g$)|(h$)|(i$)|(o$)|(r$)|(s$)|(n$)|(no$)|.*/?1:shed:?2:tted:?3:ouble:?4:roove:?5:idden:?6:nset:?7:utset:?8:idge:?9:olid:?10:one:?11:ne/i};$0" },
+
+          { "trigger": "borderTopWidth", "contents": "border-top-width: ${1:Medium/Thin/THick}${1/(m$)|(me$)|(t$)|(th$)|(thi$)|.*/?1:edium:?2:dium:?3:hin:?4:ick:?5:ck/i};$0" },
+
+          { "trigger": "borderWidth", "contents": "border-width: ${1:Medium/Thin/THick}${1/(m$)|(me$)|(t$)|(th$)|(thi$)|.*/?1:edium:?2:dium:?3:hin:?4:ick:?5:ck/i};$0" },
+          { "trigger": "borderWidth4", "contents": "border-width: ${1:top}${1/(m$)|(me$)|(t$)|(th$)|(thi$)|.*/?1:edium:?2:dium:?3:hin:?4:ick:?5:ck/i} ${2:right}${2/(m$)|(me$)|(t$)|(th$)|(thi$)|.*/?1:edium:?2:dium:?3:hin:?4:ick:?5:ck/i}${1/[0-9.]+|\\w+/$1/i} ${3:bottom}${3/(m$)|(me$)|(t$)|(th$)|(thi$)|.*/?1:edium:?2:dium:?3:hin:?4:ick:?5:ck/i}${1/[0-9.]+|\\w+/$1/i} ${4:left}${4/(m$)|(me$)|(t$)|(th$)|(thi$)|.*/?1:edium:?2:dium:?3:hin:?4:ick:?5:ck/i}${1/[0-9.]+|\\w+/$1/i};$0" },
+
+          { "trigger": "bottom", "contents": "bottom: ${1:auto};$0" },
+          { "trigger": "captionSide", "contents": "caption-side: ${1:Top/Bottom}${1/(t$)|(b$)|.*/?1:op:?2:ottom/i};$0" },
+          { "trigger": "clear", "contents": "clear: ${1:Left/Right/Both/None}${1/(l$)|(r$)|(b$)|(n$)|(no$)|.*/?1:eft:?2:ight:?3:oth:?4:one:?5:ne/i};$0" },
+          { "trigger": "clip", "contents": "clip: rect(${1:top} ${2:right}${1/top|[0-9.]+/$1/i} ${3:bottom}${1/top|[0-9.]+/$1/i} ${4:left}${1/[0-9.]+([a-z]+|\\%)\\,?$|.*/$1/i});$0" },
+          { "trigger": "clip (auto)", "contents": "clip: auto;$0" },
+
+          { "trigger": "color #RGB", "contents": "color: #${1:RRGGBB};$0" },
+          { "trigger": "color rgb()", "contents": "color: rgb(${1:rrr},${2:ggg},${3:bbb});$0" },
+          { "trigger": "color rgb(%)", "contents": "color: rgb(${1:rrr.r}%,${2:ggg.g}%,${3:bbb.b}%);$0" },
+
+          { "trigger": "color", "contents": "color: ${1:_colourz}${1/(a$)|(az$)|(b$)|(be$)|(bl$)|(br$)|(c$)|(ch$)|(f$)|(g$)|(gr$)|(go$)|(l$)|(m$)|(ma$)|(n$)|(o$)|(or$)|(p$)|(pl$)|(pu$)|(r$)|(s$)|(t$)|(v$)|(w$)|(y$)|.*/?1:qua:?2:ure:?3:lue:?4:ige:?5:ack:?6:own:?7:yan:?8:ocolate:?9:uchsia:?10:ray:?11:een:?12:ld:?13:ime:?14:aroon:?15:genta:?16:avy:?17:live:?18:ange:?19:ink:?20:um:?21:rple:?22:ed:?23:ilver:?24:eal:?25:iolet:?26:hite:?27:ellow/i};$0" },
+
+          { "trigger": "content", "contents": "content: ${1:Counter/NO-CLose-Open-quote/None/NOrmal/Url/Attr}${1/(c$)|(co$)|(cl$)|(o|no\\-o)$|(op$)|(n$)|(no$)|(no\\-$)|(no\\-c$)|(u$)|(a$)|.*/?1:ounter:?2:unter:?3:ose:?4:pen:?5:en:?6:one:?7:rmal:?8:close:?9:lose:?10:rl:?11:ttr/i}${1/(cl|o|op|no\\-[co]?)$|.*/?1:-quote/i};$0" },
+          { "trigger": "counterIncrement", "contents": "counter-increment: ${1:none};$0" },
+          { "trigger": "counterReset", "contents": "counter-Reset: ${1:none};$0" },
+
+          { "trigger": "cursor", "contents": "cursor: ${1:Auto/Crosshair/Default/*-resize/Help/Move/NOrmal/Pointer/PRogress/Text/WAit}${1/(a$)|(c$)|(d$)|(h$)|(m$)|(no$)|(pr$)|(p$)|(t$)|(wa$)|(e|ne|nw|n|se|sw|s|w)$|.*/?1:uto:?2:rosshair:?3:efault:?4:elp:?5:ove:?6:rmal:?7:ogress:?8:ointer:?9:ext:?10:it:?11:-resize/i};$0" },
+          { "trigger": "cursor url()", "contents": "cursor: url(${1});$0" },
+
+          { "trigger": "direction", "contents": "direction: ${1:Ltr Rtl}${1/(l$)|(r$)|.*/?1:tr:?2:tl/i};$0" },
+          { "trigger": "display", "contents": "display: ${1/(bl|ta)$|(ce|ca|c|co|f|fo|h|he|r|ro)$|.*/?1:inline-:?2:table-/i}${1:Inline-BLock-TAble-List-RUn-in-CEll-CAption-COlumn-Footer-Header-ROw-group/None}${1/(b$)|(i$)|(ru$)|(t$)|(l$)|(bl$)|(ta$)|(ce$)|(ca$)|(c$)|(co$)|(f$)|(fo$)|(h$)|(he$)|(r$)|(ro$)|(n$)|(no$)|.*/?1:lock:?2:nline:?3:n-in:?4:able:?5:ist-item:?6:ock:?7:ble:?8:ll:?9:ption:?10:olumn:?11:lumn-group:?12:ooter-group:?13:oter-group:?14:eader-group:?15:ader-group:?16:ow:?17:w-group:?18:one:?19:ne/i};${1/($)|.*/?1:I BL TA L RU CE CA CO F H RO N/}" },
+
+          { "trigger": "emptyCells", "contents": "empty-cells: ${1:Show/Hide}${1/(s$)|(sh$)|(h$)|(hi$)|.*/?1:how:?2:ow:?3:ide:?4:de/i};$0" },
+          { "trigger": "float", "contents": "float: ${1:Left/Right/None}${1/(l$)|(r$)|(n$)|(no$)|.*/?1:eft:?2:ight:?3:one:?4:ne/i};$0" },
+
+          { "trigger": "font", "contents": "font: ${1:style} ${2:variant} ${3:weight} ${4:size/line-height} ${5:family icon};$0" },
+          { "trigger": "fontFamily", "contents": "font-family: ${1:fonts} ${2:Sans-SErif/Cursive/Fantasy/Monospace}${2/(s$)|(sa$)|(se$)|(c$)|(f$)|(m$)|.*/?1:ans-serif:?2:ns-serif:?3:rif:?4:ursive:?5:antasy:?6:onospace/i};$0" },
+
+          { "trigger": "fontSize", "contents": "font-size: ${1:Medium/LArger/SMaller/X(X)(-)}${1/(m$)|(me$)|(l$)|(la$)|(s$)|(sm$)|(x{1,2}$)|(x{1,2}\\-)$|.*/?1:edium:?2:dium:?3:arge:?4:rger:?5:mall:?6:aller:?7:-large:?8:small/i};$0" },
+
+          { "trigger": "fontStyle", "contents": "font-style: ${1:Italic/Oblique/Normal}${1/(i$)|(it$)|(o$)|(ob$)|(n$)|(no$)|.*/?1:talic:?2:alic:?3:blique:?4:lique:?5:ormal:?6:rmal/i};$0" },
+          { "trigger": "fontVariant", "contents": "font-variant: ${1:Small-caps/Normal}${1/(s$)|(sm$)|(n$)|(no$)|.*/?1:mall-caps:?2:all-caps:?3:ormal:?4:rmal/i};$0" },
+          { "trigger": "fontWeight", "contents": "font-weight: ${1:BOlder/Lighter/Normal/#00}${1/(b$)|(bo$)|(l$)|(li$)|(n$)|(no$)|([1-9]{1})$|.*/?1:old:?2:lder:?3:ighter:?4:ghter:?5:ormal:?6:rmal:?7:\\x30\\x30/i};$0" },
+
+          { "trigger": "height", "contents": "height: ${1:auto};$0" },
+          { "trigger": "left", "contents": "left: ${1:auto};$0" },
+          { "trigger": "letterSpacing", "contents": "letter-spacing: ${1:normal};$0" },
+          { "trigger": "lineHeight", "contents": "line-height: ${1:normal};$0" },
+
+          { "trigger": "listStyle", "contents": "list-style: ${1:Armenian/Circle/DECimal/Disc/Georgian/LOWEr/UPPer/Square/None}${1/(a$)|(c$)|(d$)|(de$)|(dec$)|(g$)|(l$)|(lo$)|(low$)|(lowe$)|(s$)|(u$)|(up$)|(upp$)|(n$)|(no$)|.*/?1:rmenian:?2:ircle:?3:isc:?4:cimal:?5:imal-leading-zero:?6:eorgian:?7:ower-alpha:?8:wer-greek:?9:er-latin:?10:r-roman:?11:quare:?12:pper-alpha:?13:per-latin:?14:er-roman:?15:one:?16:ne/i} ${2:url($3)}${2/.+|($)/(?1:none)/} ${4:Inside/Outside}${4/(i$)|(in$)|(o$)|(ou$)|.*/?1:nside:?2:side:?3:utside:?4:tside/i};$0" },
+
+          { "trigger": "listStyleImage", "contents": "list-style-image: ${1:url($2)}${1/.+|($)/(?1:none)/};$0" },
+
+          { "trigger": "listStyleType", "contents": "list-style-type: ${1:Armenian/Circle/DECimal/Disc/Georgian/LOWEr/UPPer/Square/None}${1/(a$)|(c$)|(d$)|(de$)|(dec$)|(g$)|(l$)|(lo$)|(low$)|(lowe$)|(s$)|(u$)|(up$)|(upp$)|(n$)|(no$)|.*/?1:rmenian:?2:ircle:?3:isc:?4:cimal:?5:imal-leading-zero:?6:eorgian:?7:ower-alpha:?8:wer-greek:?9:er-latin:?10:r-roman:?11:quare:?12:pper-alpha:?13:per-latin:?14:er-roman:?15:one:?16:ne/i};${1/($)|.*/?1:A C DEC D G LOWE UPP S N/}" },
+
+          { "trigger": "listStylePosition", "contents": "list-style-position: ${1:Inside/Outside}${1/(i$)|(in$)|(o$)|(ou$)|.*/?1:nside:?2:side:?3:utside:?4:tside/i};$0" },
+
+          { "trigger": "margin", "contents": "margin: ${1:auto};$0" },
+          { "trigger": "margin4", "contents": "margin: ${1:top}${1/(a$)|(au$)|.*/?1:uto:?2:to/i} ${2:right}${2/(a$)|(au$)|.*/?1:uto:?2:to/i}${1/[0-9.]+|\\w+/$1/i} ${3:bottom}${3/(a$)|(au$)|.*/?1:uto:?2:to/i}${1/[0-9.]+|\\w+/$1/i} ${4:left}${4/(a$)|(au$)|.*/?1:uto:?2:to/i}${1/[0-9.]+|\\w+/$1/i};$0" },
+          { "trigger": "marginBottom", "contents": "margin-bottom: ${1:auto};$0" },
+          { "trigger": "marginLeft", "contents": "margin-left: ${1:auto};$0" },
+          { "trigger": "marginRight", "contents": "margin-right: ${1:auto};$0" },
+          { "trigger": "marginTop", "contents": "margin-top: ${1:auto};$0" },
+
+          { "trigger": "maxHeight", "contents": "max-height: ${1:none};$0" },
+          { "trigger": "maxWidth", "contents": "max-width: ${1:none};$0" },
+          { "trigger": "minHeight", "contents": "min-height: ${1:0};$0" },
+          { "trigger": "minWidth", "contents": "min-width: ${1:0};$0" },
+
+          { "trigger": "outline", "contents": "outline: ${1:_colourz}${1/(a$)|(az$)|(b$)|(be$)|(bl$)|(br$)|(c$)|(ch$)|(f$)|(g$)|(gr$)|(go$)|(l$)|(m$)|(ma$)|(n$)|(o$)|(or$)|(p$)|(pl$)|(pu$)|(r$)|(s$)|(t$)|(v$)|(w$)|(y$)|(i$)|(in$)|.*/?1:qua:?2:ure:?3:lue:?4:ige:?5:ack:?6:own:?7:yan:?8:ocolate:?9:uchsia:?10:ray:?11:een:?12:ld:?13:ime:?14:aroon:?15:genta:?16:avy:?17:live:?18:ange:?19:ink:?20:um:?21:rple:?22:ed:?23:ilver:?24:eal:?25:iolet:?26:hite:?27:ellow:?28:nvert:?29:vert/i} ${2:DAshed/DOtted/Double/Groove/Inset/Outset/Ridge/Solid/None}${2/(da$)|(do$)|(d$)|(g$)|(i$)|(o$)|(r$)|(s$)|(n$)|(no$)|.*/?1:shed:?2:tted:?3:ouble:?4:roove:?5:nset:?6:utset:?7:idge:?8:olid:?9:one:?10:ne/i} ${3:Medium/Thin/THick}${3/(m$)|(me$)|(t$)|(th$)|(thi$)|.*/?1:edium:?2:dium:?3:hin:?4:ick:?5:ck/i};$0" },
+
+          { "trigger": "outlineColor", "contents": "outline-color: ${1:_colourz}${1/(a$)|(az$)|(b$)|(be$)|(bl$)|(br$)|(c$)|(ch$)|(f$)|(g$)|(gr$)|(go$)|(l$)|(m$)|(ma$)|(n$)|(o$)|(or$)|(p$)|(pl$)|(pu$)|(r$)|(s$)|(t$)|(v$)|(w$)|(y$)|(i$)|(in$)|.*/?1:qua:?2:ure:?3:lue:?4:ige:?5:ack:?6:own:?7:yan:?8:ocolate:?9:uchsia:?10:ray:?11:een:?12:ld:?13:ime:?14:aroon:?15:genta:?16:avy:?17:live:?18:ange:?19:ink:?20:um:?21:rple:?22:ed:?23:ilver:?24:eal:?25:iolet:?26:hite:?27:ellow:?28:nvert:?29:vert/i};$0" },   // additional - invert
+
+          { "trigger": "outlineStyle", "contents": "outline-style: ${1:DAshed/DOtted/Double/Groove/Inset/Outset/Ridge/Solid/None}${1/(da$)|(do$)|(d$)|(g$)|(i$)|(o$)|(r$)|(s$)|(n$)|(no$)|.*/?1:shed:?2:tted:?3:ouble:?4:roove:?5:nset:?6:utset:?7:idge:?8:olid:?9:one:?10:ne/i};$0" },
+          { "trigger": "outlineWidth", "contents": "outline-width: ${1:Medium/Thin/THick}${1/(m$)|(me$)|(t$)|(th$)|(thi$)|.*/?1:edium:?2:dium:?3:hin:?4:ick:?5:ck/i};$0" },
+
+          { "trigger": "overflow", "contents": "overflow: ${1:Hidden/Scroll/Auto/Visible}${1/(h$)|(s$)|(a$)|(au$)|(v$)|.*/?1:idden:?2:croll:?3:uto:?4:to:?5:isible/i};$0" },
+          { "trigger": "overflowX", "contents": "overflow-x: ${1:Hidden/Scroll/Auto/Visible/NO-content-display}${1/(h$)|(s$)|(a$)|(au$)|(v$)|(n$)|(no$)|(no\\-c$)|(no\\-d$)|.*/?1:idden:?2:croll:?3:uto:?4:to:?5:isible:?6:o-content:?7:-display:?8:ontent:?9:isplay/i};$0" },
+          { "trigger": "overflowY", "contents": "overflow-y: ${1:Hidden/Scroll/Auto/Visible/NO-content-display}${1/(h$)|(s$)|(a$)|(au$)|(v$)|(n$)|(no$)|(no\\-c$)|(no\\-d$)|.*/?1:idden:?2:croll:?3:uto:?4:to:?5:isible:?6:o-content:?7:-display:?8:ontent:?9:isplay/i};$0" },
+
+          { "trigger": "padding", "contents": "padding: ${1:0};$0" },
+          { "trigger": "padding4", "contents": "padding: ${1:top} ${2:right}${1/[0-9.]+|\\w+/$1/i} ${3:bottom}${1/[0-9.]+|\\w+/$1/i} ${4:left}${1/[0-9.]+|\\w+/$1/i};$0" },
+          { "trigger": "paddingBottom", "contents": "padding-bottom: ${1:0};$0" },
+          { "trigger": "paddingLeft", "contents": "padding-left: ${1:0};$0" },
+          { "trigger": "paddingRight", "contents": "padding-right: ${1:0};$0" },
+          { "trigger": "paddingTop", "contents": "padding-top: ${1:0};$0" },
+
+          { "trigger": "pageBreakAfter", "contents": "page-break-after: ${1:Auto/ALways/AVoid/Left/Right}${1/(a$)|(au$)|(al$)|(av$)|(l$)|(r$)|.*/?1:uto:?2:to:?3:ways:?4:oid:?5:eft:?6:ight/i};$0" },
+          { "trigger": "pageBreakBefore", "contents": "page-break-before: ${1:Auto/ALways/AVoid/Left/Right}${1/(a$)|(au$)|(al$)|(av$)|(l$)|(r$)|.*/?1:uto:?2:to:?3:ways:?4:oid:?5:eft:?6:ight/i};$0" },
+          { "trigger": "pageBreakInside", "contents": "page-break-inside: ${1:Auto/AVoid}${1/(a$)|(au$)|(av$)|.*/?1:uto:?2:to:?3:oid/i};$0" },
+     	{ "trigger": "position", "contents": "position: ${1:Absolute/Relative/Fixed/Static}${1/(a$)|(r$)|(f$)|(s$)|(ab$)|(re$)|(fi$)|(st$)|.*/?1:bsolute:?2:elative:?3:ixed:?4:tatic:?5:solute:?6:lative:?7:xed:?8:atic/i};$0" },
+
+          { "trigger": "quotes", "contents": "quotes: ${1:none};$0" },
+
+          { "trigger": "#RGB", "contents": "#${1:RRGGBB}" },
+          { "trigger": "rgb()", "contents": "rgb(${1:rrr},${2:ggg},${3:bbb})" },
+          { "trigger": "rgb(%)", "contents": "rgb(${1:rrr.r}%,${2:ggg.g}%,${3:bbb.b}%)" },
+
+          { "trigger": "right", "contents": "right: ${1:auto};$0" },
+          { "trigger": "tableLayout", "contents": "table-layout: ${1:Fixed/Auto}${1/(f$)|(fi$)|(a$)|(au$)|.*/?1:ixed:?2:xed:?3:uto:?4:to/i};$0" },
+          { "trigger": "textAlign", "contents": "text-align: ${1:Left/Center/Right/Justify}${1/(l$)|(c$)|(r$)|(j$)|.*/?1:eft:?2:enter:?3:ight:?4:ustify/i};$0" },
+          { "trigger": "textDecoration", "contents": "text-decoration:${1:${2: underline}${3: overline}${4: line-through}${5: blink}}${1/.+|($)/(?1: none)/};$0" },
+          { "trigger": "textIndent", "contents": "textIndent: ${1:0};$0" },
+          { "trigger": "textJustify", "contents": "text-justify: ${1/(c|cl|i|id|w|wo)$|.*/?1:inter-/i}${1:Auto/Distribute/Kashida/inter-Cluster-Ideograph-Word/None}${1/(a$)|(au$)|(d$)|(di$)|(k$)|(ka$)|(c$)|(cl$)|(i$)|(id$)|(w$)|(wo$)|(n$)|(no$)|.*/?1:uto:?2:to:?3:istribute:?4:stribute:?5:ashida:?6:shida:?7:luster:?8:uster:?9:deograph:?10:eograph:?11:ord:?12:rd:?13:one:?14:ne/i};${1/($)|.*/?1:A D K C I W N/}" },
+
+          { "trigger": "textOverflow", "contents": "text-overflow: ${1:Clip/Ellipsis/string}${1/(c$)|(cl$)|(e$)|(el$)|(ell$)|.*/?1:lip:?2:ip:?3:llipsis:?4:lipsis:?5:ipsis/i};$0" },
+          { "trigger": "textTransform", "contents": "text-transform: ${1:Upper-Lowercase/Capitalize/None}${1/(u$)|(l$)|(c$)|(n$)|.*/?1:pper:?2:ower:?3:aptalize:?4:one/i};$0" },
+
+          { "trigger": "top", "contents": "top: ${1:auto};$0" },
+          { "trigger": "unicode-bidi", "contents": "unicode-bidi: ${1:Normal/Embed/Bidi-override}${1/(n$)|(no$)|(e$)|(em$)|(b$)|(bi$)|.*/?1:ormal:?2:rmal:?3mbed:?4:bed:?5:idi-override:?6:di-override/i};$0" },
+          { "trigger": "url()", "contents": "url(${1})$0" },
+          { "trigger": "verticalAlign", "contents": "vertical-align: ${1:Baseline/BOttom/Middle/Sub/SUper/Top/TEXt-top-bottom}${1/(b$)|(ba$)|(bo$)|(m$)|(mi$)|(s$)|(su$)|(t$)|(te$)|(tex$)|(text$)|.*/?1:aseline:?2:seline:?3:ttom:?4:iddle:?5:ddle:?6:ub:?7:per:?8:op:?9:xt-top:?10:t-bottom:?11:-bottom/i};$0" },
+          { "trigger": "visibility", "contents": "visibility: ${1:Visible/Hidden/Collapse}${1/(v$)|(vi$)|(h$)|(hi$)|(c$)|(co$)|.*/?1:isible:?2:sible:?3:idden:?4:dden:?5:ollapse:?6:llapse/i};$0" },
+          { "trigger": "whiteSpace", "contents": "white-space: ${1:Normal/NOwrap/PRE-wrap-line}${1/(n$)|(no$)|(p$)|(pr$)|(pre$)|.*/?1:ormal:?2:wrap:?3:re:?4:e-wrap:?5:-line/i};$0" },
+          { "trigger": "width", "contents": "width: ${1:auto};$0" },
+          { "trigger": "wordSpacing", "contents": "word-spacing: ${1:normal};$0" },
+          { "trigger": "wordWrap", "contents": "word-wrap: ${1:Break-word/Normal}${1/(b$)|(br$)|(n$)|(no$)|.*/?1:reak-word:?2:eak-word:?3:ormal:?4:rmal/i};$0" },
+          { "trigger": "zIndex", "contents": "z-index: ${1:auto};$0" },
+
+          { "trigger": "_bstylz", "contents": "dashed" },   // border styles
+          { "trigger": "_bstylz", "contents": "dotted" },
+          { "trigger": "_bstylz", "contents": "double" },
+          { "trigger": "_bstylz", "contents": "groove" },
+          { "trigger": "_bstylz", "contents": "hidden" },   // outline-style omits
+          { "trigger": "_bstylz", "contents": "inset" },
+          { "trigger": "_bstylz", "contents": "outset" },
+          { "trigger": "_bstylz", "contents": "ridge" },
+          { "trigger": "_bstylz", "contents": "solid" },
+          { "trigger": "_bstylz", "contents": "none" },
+
+          { "trigger": "_bwidf", "contents": "medium" },    // border width
+          { "trigger": "_bwidf", "contents": "thick" },
+          { "trigger": "_bwidf", "contents": "thin" },
+
+          { "trigger": "_colourz", "contents": "aqua" },
+          { "trigger": "_colourz", "contents": "azure" },
+          { "trigger": "_colourz", "contents": "beige" },
+          { "trigger": "_colourz", "contents": "black" },
+          { "trigger": "_colourz", "contents": "blue" },
+          { "trigger": "_colourz", "contents": "brown" },
+          { "trigger": "_colourz", "contents": "cyan" },
+          { "trigger": "_colourz", "contents": "chocolate" },
+          { "trigger": "_colourz", "contents": "fuchsia" },
+          { "trigger": "_colourz", "contents": "gold" },
+          { "trigger": "_colourz", "contents": "gray" },
+          { "trigger": "_colourz", "contents": "green" },
+          { "trigger": "_colourz", "contents": "lime" },
+          { "trigger": "_colourz", "contents": "magenta" },
+          { "trigger": "_colourz", "contents": "maroon" },
+          { "trigger": "_colourz", "contents": "navy" },
+          { "trigger": "_colourz", "contents": "olive" },
+          { "trigger": "_colourz", "contents": "orange" },
+          { "trigger": "_colourz", "contents": "pink" },
+          { "trigger": "_colourz", "contents": "plum" },
+          { "trigger": "_colourz", "contents": "purple" },
+          { "trigger": "_colourz", "contents": "red" },
+          { "trigger": "_colourz", "contents": "silver" },
+          { "trigger": "_colourz", "contents": "teal" },
+          { "trigger": "_colourz", "contents": "violet" },
+          { "trigger": "_colourz", "contents": "white" },
+          { "trigger": "_colourz", "contents": "yellow" },
+
+          { "trigger": "_fontz", "contents": "font-family: Arial, Helvetica, sans-serif;" },
+          { "trigger": "_fontz", "contents": "font-family: 'Arial Black', Gadget, sans-serif;" },
+          { "trigger": "_fontz", "contents": "font-family: 'Bookman Old Style', serif;" },
+          { "trigger": "_fontz", "contents": "font-family: 'Comic Sans MS', cursive;" },
+          { "trigger": "_fontz", "contents": "font-family: Courier, monospace;" },
+          { "trigger": "_fontz", "contents": "font-family: 'Courier New', Courier, monospace;" },
+          { "trigger": "_fontz", "contents": "font-family: Garamond, serif;" },
+          { "trigger": "_fontz", "contents": "font-family: Georgia, serif;" },
+          { "trigger": "_fontz", "contents": "font-family: Impact, Charcoal, sans-serif;" },
+          { "trigger": "_fontz", "contents": "font-family: 'Lucida Console', Monaco, monospace;" },
+          { "trigger": "_fontz", "contents": "font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;" },
+          { "trigger": "_fontz", "contents": "font-family: 'MS Sans Serif', Geneva, sans-serif;" },
+          { "trigger": "_fontz", "contents": "font-family: 'MS Serif', 'New York', sans-serif;" },
+          { "trigger": "_fontz", "contents": "font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;" },
+          { "trigger": "_fontz", "contents": "font-family: Symbol, sans-serif;" },
+          { "trigger": "_fontz", "contents": "font-family: Tahoma, Geneva, sans-serif;" },
+          { "trigger": "_fontz", "contents": "font-family: 'Times New Roman', Times, serif;" },
+          { "trigger": "_fontz", "contents": "font-family: 'Trebuchet MS', Helvetica, sans-serif;" },
+          { "trigger": "_fontz", "contents": "font-family: Verdana, Geneva, sans-serif;" },
+          { "trigger": "_fontz", "contents": "font-family: Webdings, sans-serif;" },
+          { "trigger": "_fontz", "contents": "font-family: Wingdings, 'Zapf Dingbats', sans-serif;" },
+
+          { "trigger": "_showz", "contents": "block" },     // display types
+          { "trigger": "_showz", "contents": "inline" },
+          { "trigger": "_showz", "contents": "inline-block" },
+          { "trigger": "_showz", "contents": "inline-table" },
+          { "trigger": "_showz", "contents": "list-item" },
+          { "trigger": "_showz", "contents": "none" },
+          { "trigger": "_showz", "contents": "run-in" },
+          { "trigger": "_showz", "contents": "table" },
+          { "trigger": "_showz", "contents": "table-caption" },
+          { "trigger": "_showz", "contents": "table-cell" },
+          { "trigger": "_showz", "contents": "table-column" },
+          { "trigger": "_showz", "contents": "table-column-group" },
+          { "trigger": "_showz", "contents": "table-footer-group" },
+          { "trigger": "_showz", "contents": "table-header-group" },
+          { "trigger": "_showz", "contents": "table-row" },
+          { "trigger": "_showz", "contents": "table-row-group" },
+
+          { "trigger": "_xhair", "contents": "auto" },      // cursors
+          { "trigger": "_xhair", "contents": "crosshair" },
+          { "trigger": "_xhair", "contents": "default" },
+          { "trigger": "_xhair", "contents": "e-resize" },
+          { "trigger": "_xhair", "contents": "help" },
+          { "trigger": "_xhair", "contents": "move" },
+          { "trigger": "_xhair", "contents": "n-resize" },
+          { "trigger": "_xhair", "contents": "ne-resize" },
+          { "trigger": "_xhair", "contents": "normal" },
+          { "trigger": "_xhair", "contents": "nw-resize" },
+          { "trigger": "_xhair", "contents": "pointer" },
+          { "trigger": "_xhair", "contents": "progress" },
+          { "trigger": "_xhair", "contents": "s-resize" },
+          { "trigger": "_xhair", "contents": "se-resize" },
+          { "trigger": "_xhair", "contents": "sw-resize" },
+          { "trigger": "_xhair", "contents": "text" },
+          { "trigger": "_xhair", "contents": "url(${1})" },
+          { "trigger": "_xhair", "contents": "w-resize" },
+          { "trigger": "_xhair", "contents": "wait" }
+    ]
+}
