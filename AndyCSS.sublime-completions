@@ -1,5 +1,5 @@
 {
-    "scope": "source.css meta.property-list.css",      // - comment.block.css ?
+    "scope": "source.css, meta.property-list.css, source.sass, source.scss",      // - comment.block.css ?
 
     "completions": [
           { "trigger": "background", "contents": "background: ${1:_colourz} ${2:position} ${3:size} ${4:repeat} ${5:origin} ${6:clip} ${7:attachment} ${8:image};$0" },
