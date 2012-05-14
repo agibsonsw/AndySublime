@@ -1,2 +1,7 @@
-Just started with Git, but I intend to use this repo for Sublime Text 
-completions, snippets, etc..
+CSS and JavaScript completions for Sublime Text 2.
+
+It is recommended to adjust the setting "auto_complete_delay" to prevent the completions (particularly the JS ones) not appearing too quickly.
+
+With the JS completions, typing, for example 'aler' for 'window.alert()' will automatically pre-pend 'window'. However, typing 'mywin.aler' will just complete 'alert()'.
+
+The CSS completions will complete many values for you. For example, the border property allows you to type the single letter 'm' for medium, 't' for 'thin' and 'th' for 'thick'. There are many such abbreviations.
