@@ -14,3 +14,6 @@ Another example: Using the 'borderwidth4' trigger, if you type '10px' it will wr
 '10px px px px' and you can tab to the other three positions to add the number of pixels. 
 If you don't want pixels for all four then you should modify it once you've tabbed out of 
 the completion.
+
+When, for example, typing a color you might type 'b' and it will change to 'blue'. Continue 
+typing 'bl' and it will change to 'black', but if you press Backspace it will revert to 'blue'.
