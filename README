@@ -1,11 +1,16 @@
 CSS and JavaScript completions for Sublime Text 2.
 
-It is recommended to adjust the setting "auto_complete_delay" to prevent 
-the completions (particularly the JS ones) not appearing too quickly.
+It is recommended to adjust the setting "auto_complete_delay" to prevent the completions 
+(particularly the JS ones) not appearing too quickly.
 
-With the JS completions, typing, for example 'aler' for 'window.alert()' 
-will automatically pre-pend 'window'. However, typing 'mywin.aler' will just complete 'alert()'.
+With the JS completions, typing, for example 'aler' for 'window.alert()' will automatically 
+pre-pend 'window'. However, typing 'mywin.aler' will just complete 'alert()'.
 
-The CSS completions will complete many values for you. For example, the border 
-property allows you to type the single letter 'm' for medium, 't' for 'thin' and 'th' 
-for 'thick'. There are many such abbreviations.
+The CSS completions will complete many values for you. For example, the border property 
+allows you to type the single letter 'm' for medium, 't' for 'thin' and 'th' for 'thick'. 
+There are many such abbreviations.
+
+Another example: Using the 'borderwidth4' trigger, if you type '10px' it will write 
+'10px px px px' and you can tab to the other three positions to add the number of pixels. 
+If you don't want pixels for all four then you should modify it once you've tabbed out of 
+the completion.
