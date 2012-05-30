@@ -1,2 +1,26 @@
-Just started with Git, but I intend to use this repo for Sublime Text 
-completions, snippets, etc..
+CSS and JavaScript completions for Sublime Text 2.
+
+It is recommended to adjust the setting "auto_complete_delay" to prevent the completions 
+(particularly the JS ones) not appearing too quickly.
+
+With the JS completions, typing, for example 'aler' for 'window.alert()' will automatically 
+pre-pend 'window'. However, typing 'mywin.aler' will just complete 'alert()'.
+
+The CSS completions will complete many values for you. For example, the border property 
+allows you to type the single letter 'm' for medium, 't' for 'thin' and 'th' for 'thick'. 
+There are many such abbreviations.
+
+Another example: Using the 'borderwidth4' trigger, if you type '10px' it will write 
+'10px px px px' and you can tab to the other three positions to add the number of pixels. 
+If you don't want pixels for all four then you should modify it once you've tabbed out of 
+the completion.
+
+When, for example, typing a color you might type 'b' and it will change to 'blue'. Continue 
+typing 'bl' and it will change to 'black', but if you press Backspace it will revert to 'blue'.
+
+    overflow: Hidden/Scroll/Auto/Visible;
+
+ - the capital letters indicate that pressing, for example, 'h' will complete the word 'hidden'. 
+(You don't have to type them in capitals, this is just the notation used to confirm the letters 
+you need to type.) Again, you can press Backspace and type a different letter and it will correct 
+the value for you.
