@@ -8,8 +8,8 @@
         "length",
 
         { "trigger": "jQuery()", "contents": "jQuery(${1})$0" },
-        { "trigger": "handler", "contents": "function (e$1) {\n\t$2\n}$0" },
-        
+        { "trigger": "callback", "contents": "function ($1) {\n\t$2\n}$0" },    /* anonymous function */
+        { "trigger": "handler", "contents": "function ($1) {\n\t$2\n}$0" },
 
         { "trigger": "add()", "contents": "add(${1:selector}${2:[, context]})$0" },
         { "trigger": "addClass()", "contents": "addClass(${1:classname_or_fn})$0" },
