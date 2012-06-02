@@ -1,4 +1,5 @@
-CSS and JavaScript completions for Sublime Text 2.
+CSS and JavaScript completions for Sublime Text 2. Installation just requires copying the 
+file(s) to your User or CSS/JavaScript folder within Sublime\Packages.
 
 It is recommended to adjust the setting "auto_complete_delay" to prevent the completions 
 (particularly the JS ones) not appearing too quickly.
