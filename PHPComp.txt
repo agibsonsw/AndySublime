@@ -1,0 +1,45 @@
+I'm on Sublime Text Build 2181 so am unaware if the PHP 
+Completions have been updated in a more recent build. 
+Nevertheless, I've updated the PHP completions file.
+
+I've added all new functions (around 1000!), updated/added 
+lots of parameters, etc. However, the most significant change 
+is that I've commented out a large list of extensions (listed 
+below). Most of these have been moved to PECL extensions, 
+and I don't think they should show by default. That is, 
+I would un-comment them if/when I install the extension(s).
+
+Libraries commented out:
+Cairo, CUBRID, DB2, DBA, dBase, dbplus, dbx, Eio, Enchant, 
+FrontBase (fbsql), Forms Data Format (FDF), filePro, GeoIP, 
+GNU Multiple Precision (gmp), GnuPG, grapheme, GUPnP, gz (Zlib), 
+HyperWave, ibase, ID3, Informix (ifx), IIS, IMAP, Ingres, 
+Kerberos V, LDAP, Monetra, Mailparse, MaxDB, mcrypt, Mhash, 
+Ming, mqseries, msession, MS SQL, Ncurses, newt, (Lotus) Notes, 
+nsapi, Oracle (oci), OpenAL, OpenSSL, Ovrimos, PCNTL, PDF, 
+Postgre, POSIX, PostScript, Paradox, qtdom, Radius, GNU Readline, 
+runkit, PostgreSQL, Semaphore, SWF, sybase, udm, vpopmail, Yaf, 
+YAZ, YP/NIS.
+
+Most of these are for database drivers. Most PHP programmers 
+will either use MySQL, or only use one other driver. Having all 
+these drivers showing in the completions list ALL THE TIME is 
+redundant and confusing.
+
+I've also switched the order of mysql and mysqli, and indicated 
+where mysql-functions are deprecated or discouraged.
+
+I've also favoured the correct casing for class, interface, 
+constructor, and exception names.
+
+I've largely retained the older, procedural, function names, 
+rather than their OO-method equivalents - except for the 
+DOM library methods. My reasoning is:
+
+A lot of programmers still use the functions;
+It will make the file almost twice the size!!
+It would take a long time ?!
+
+Note: If you update ST, a future build may overwrite the PHP-
+completions file. So keep a copy of mine available if you 
+still wish to use it in the future.
