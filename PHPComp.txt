@@ -27,14 +27,16 @@ these drivers showing in the completions list ALL THE TIME is
 redundant and confusing.
 
 I've also switched the order of mysql and mysqli, and indicated 
-where mysql-functions are deprecated or discouraged.
+where mysql-functions are deprecated or discouraged. Edited: I've 
+commented out mysql-functions and added MySqli-OO-methods in 
+preference.
 
 I've also favoured the correct casing for class, interface, 
 constructor, and exception names.
 
 I've largely retained the older, procedural, function names, 
 rather than their OO-method equivalents - except for the 
-DOM library methods. My reasoning is:
+DOM and PDO library methods. My reasoning is:
 
 A lot of programmers still use the functions;
 It will make the file almost twice the size!!
