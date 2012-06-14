@@ -25,3 +25,5 @@ typing 'bl' and it will change to 'black', but if you press Backspace it will re
 (You don't have to type them in capitals, this is just the notation used to confirm the letters 
 you need to type.) Again, you can press Backspace and type a different letter and it will correct 
 the value for you.
+
+My Wiki contains some more information for the different completion files.
