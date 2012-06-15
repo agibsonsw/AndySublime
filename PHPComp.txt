@@ -10,7 +10,7 @@ and I don't think they should show by default. That is,
 I would un-comment them if/when I install the extension(s).
 
 Libraries commented out:
-Cairo, CUBRID, DB2, DBA, dBase, dbplus, dbx, Eio, Enchant, 
+Cairo, CUBRID, Cyrus, DB2, DBA, dBase, dbplus, dbx, Eio, Enchant, 
 FrontBase (fbsql), Forms Data Format (FDF), filePro, GeoIP, 
 GNU Multiple Precision (gmp), GnuPG, grapheme, GUPnP, gz (Zlib), 
 HyperWave, ibase, ID3, Informix (ifx), IIS, IMAP, Ingres, 
