@@ -11,7 +11,7 @@ I would un-comment them if/when I install the extension(s).
 
 Libraries commented out:
 Cairo, CUBRID, Cyrus, DB2, DBA, dBase, dbplus, dbx, Eio, Enchant, 
-FrontBase (fbsql), Forms Data Format (FDF), filePro, GeoIP, 
+FAM, FrontBase (fbsql), Forms Data Format (FDF), filePro, GeoIP, 
 GNU Multiple Precision (gmp), GnuPG, grapheme, GUPnP, gz (Zlib), 
 HyperWave, ibase, ID3, Informix (ifx), IIS, IMAP, Ingres, 
 Kerberos V, LDAP, Monetra, Mailparse, MaxDB, mcrypt, Mhash, 
