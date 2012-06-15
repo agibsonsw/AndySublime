@@ -7,7 +7,11 @@
         "$_COOKIE", "$_ENV", "$_FILES", "$_GET", "$_POST", "$_REQUEST", "$_SERVER", "$_SESSION", "$GLOBALS",
         "echo", "include", "include_once", "print", "require", "require_once",
 
+        { "trigger": "__autoload()", "contents": "__autoload(${1:class})$0" },
+        { "trigger": "__construct()", "contents": "__construct($1)$0" },
+        { "trigger": "__destruct()", "contents": "__destruct()" },
         { "trigger": "__halt_compiler()", "contents": "__halt_compiler()" },
+
         { "trigger": "abs()", "contents": "abs(${1:number})" },
         { "trigger": "acos()", "contents": "acos(${1:arg})" },
         { "trigger": "acosh()", "contents": "acosh(${1:arg})" },
@@ -140,7 +144,6 @@
         { "trigger": "atan()", "contents": "atan(${1:arg})" },
         { "trigger": "atan2()", "contents": "atan2(${1:y}, ${2:x})" },
         { "trigger": "atanh()", "contents": "atanh(${1:arg})" },
-        { "trigger": "__autoload()", "contents": "__autoload(${1:class})$0" },
         { "trigger": "autoload()", "contents": "autoload(${1:class})$0" },
         "BadFunctionCallException", 
         "BadMethodCallException",
@@ -409,7 +412,6 @@
         { "trigger": "connection_status()", "contents": "connection_status()" },
         { "trigger": "connection_timeout()\tdeprecated ", "contents": "connection_timeout()" },
         { "trigger": "constant()", "contents": "constant(${1:name})" },
-        { "trigger": "__construct()", "contents": "__construct($1)$0" },
         { "trigger": "convert_cyr_string()", "contents": "convert_cyr_string(${1:str}, ${2:from}, ${3:to})" },
         { "trigger": "convert_uudecode()", "contents": "convert_uudecode(${1:data})" },
         { "trigger": "convert_uuencode()", "contents": "convert_uuencode(${1:data})" },
@@ -750,7 +752,6 @@
         { "trigger": "defined()", "contents": "defined(${1:name})" },
         { "trigger": "deg2rad()", "contents": "deg2rad(${1:number})" },
         { "trigger": "delete()\tdummy", "contents": "delete()" },
-        "__destruct",
         { "trigger": "dgettext()", "contents": "dgettext(${1:domain}, ${2:message})" },
         { "trigger": "die()", "contents": "die(${1:[status]})$0" },
         // Direct IO - moved to PECL as of PHP 5.1.0
