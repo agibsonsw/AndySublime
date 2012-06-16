@@ -4,7 +4,7 @@
     "completions":
     [
         "php",
-        "$_COOKIE", "$_ENV", "$_FILES", "$_GET", "$_POST", "$_REQUEST", "$_SERVER", "$_SESSION", "$GLOBALS",
+        // "$_COOKIE", "$_ENV", "$_FILES", "$_GET", "$_POST", "$_REQUEST", "$_SERVER", "$_SESSION", "$GLOBALS",
         "echo", "include", "include_once", "print", "require", "require_once",
 
         { "trigger": "__autoload()", "contents": "__autoload(${1:class})$0" },
