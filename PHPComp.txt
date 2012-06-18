@@ -16,10 +16,10 @@ GNU Multiple Precision (gmp), GnuPG, grapheme, GUPnP, gz (Zlib),
 HyperWave, ibase, ID3, Informix (ifx), IIS, IMAP, Ingres, 
 Kerberos V, LDAP, Monetra, Mailparse, MaxDB, mcrypt, Mhash, 
 Ming, Mongo, mqseries, msession, MS SQL, Ncurses, newt, (Lotus) Notes, 
-nsapi, Oracle (oci), OpenAL, OpenSSL, Ovrimos, PCNTL, PDF, 
+nsapi, Oracle (oci), OpenAL, OpenSSL, Ovrimos, Parsekit, PCNTL, PDF, 
 Postgre, POSIX, PostScript, Paradox, qtdom, Radius, GNU Readline, 
 runkit, PostgreSQL, Semaphore, SWF, sybase, udm, vpopmail, Yaf, 
-YAZ, YP/NIS.
+Yaml, YAZ, YP/NIS.
 
 Most of these are for database drivers. Most PHP programmers 
 will either use MySQL, or only use one other driver. Having all 
