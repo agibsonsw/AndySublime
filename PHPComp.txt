@@ -46,6 +46,12 @@ Added: I've subsequently also added OO-methods for XMLReader,
 XMLWriter and XSLTProcessor. (I'm tempted to comment out the 
 xmlwriter and xlst functions.)
 
+I do not intend to include any OO-properties or constants. 
+Adding properties, in particular, would create many duplicate 
+words in the completions list. An exception to this is that 
+I have included mysqli constants - but I could delete, or 
+comment these, if they get in the way too much(?).
+
 Note: If you update ST, a future build may overwrite the PHP-
 completions file. So keep a copy of mine available if you 
 still wish to use it in the future. Or, at least, don't name 
