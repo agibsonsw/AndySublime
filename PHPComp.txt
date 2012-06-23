@@ -39,9 +39,14 @@ rather than their OO-method equivalents - except for the
 DOM and PDO library methods. My reasoning is:
 
 A lot of programmers still use the functions;
-It will make the file almost twice the size!!
+It will make the file almost twice the size!
 It would take a long time ?!
+
+Added: I've subsequently also added OO-methods for XMLReader, 
+XMLWriter and XSLTProcessor. (I'm tempted to comment out the 
+xmlwriter and xlst functions.)
 
 Note: If you update ST, a future build may overwrite the PHP-
 completions file. So keep a copy of mine available if you 
-still wish to use it in the future.
+still wish to use it in the future. Or, at least, don't name 
+it PHP.sublime-completions.
