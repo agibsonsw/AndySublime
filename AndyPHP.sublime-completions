@@ -2979,6 +2979,7 @@
         { "trigger": "mysqli_connect_error()", "contents": "mysqli_connect_error()" },
         { "trigger": "mysqli_data_seek()", "contents": "mysqli_data_seek(${1:result}, ${2:offset})$0" },
         { "trigger": "mysqli_debug()", "contents": "mysqli_debug(${1:message})$0" },
+        { "trigger": "mysqli_disable_reads_from_master()\tdeprecated ", "contents": "mysqli_disable_reads_from_master(${1:link})$0" },
         { "trigger": "mysqli_disable_rpl_parse()\tdeprecated ", "contents": "mysqli_disable_rpl_parse(${1:link})$0" },
         { "trigger": "mysqli_dump_debug_info()", "contents": "mysqli_dump_debug_info(${1:link})$0" },
         { "trigger": "mysqli_enable_reads_from_master()\tdeprecated ", "contents": "mysqli_enable_reads_from_master(${1:link})$0" },
