@@ -12,6 +12,8 @@ import subprocess
 # The file hh.exe (or a more recent alternative) needs to be available on your Windows 
 # environment-path(s).
 
+# Requires the file 'PyHelp.py' for Python help - which doesn't use a .chm and displays 
+# in an output panel. (Edit this file if Python not required).
 PHP_HELP = \
 """hh.exe mk:@MSITStore:C:\\Windows\\Help\\php_enhanced_en.chm::/res/function.%(func)s.html"""
 JS_HELP = \
