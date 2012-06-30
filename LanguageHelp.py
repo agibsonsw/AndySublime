@@ -13,7 +13,7 @@ import subprocess
 # environment-path(s).
 
 # Requires the file 'PyHelp.py' for Python help - which doesn't use a .chm and displays 
-# in an output panel. (Edit this file if Python not required).
+# in an output panel. (Edit this file as indicated if this file is not available or required).
 PHP_HELP = \
 """hh.exe mk:@MSITStore:C:\\Windows\\Help\\php_enhanced_en.chm::/res/function.%(func)s.html"""
 JS_HELP = \
@@ -32,6 +32,7 @@ class LanguageHelpCommand(sublime_plugin.TextCommand):
             source = 'JQUERY'
         elif curr_view.match_selector(curr_sel.begin(), 'source.js'):
             source = 'JS'
+        # Delete the following 3 lines if the file 'PyHelp.py' is not available:
         elif curr_view.match_selector(curr_sel.begin(), 'source.python'):
             self.view.run_command("py_help")
             return
