@@ -1,0 +1,9 @@
+HTML completions and attributes.
+
+I've added HTML5 tags and attributes.
+
+I'm considering amending the completions to add 
+an extra tab position within the opening tag. I 
+might do this for all of the tags, or just for 
+those ones where additional attributes are nearly 
+always added - such as DIV, SPAN, etc..
