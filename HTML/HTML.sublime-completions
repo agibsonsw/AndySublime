@@ -87,7 +87,7 @@
         { "trigger": "section\tHTML5", "contents": "<section>$1</section>" },
         { "trigger": "select", "contents": "<select>$1</select>" },
         { "trigger": "small", "contents": "<small>$1</small>" },
-        { "trigger": "span", "contents": "<span$1>$2</span>" },
+        { "trigger": "span", "contents": "<span>$1</span>" },
         { "trigger": "strong", "contents": "<strong>$1</strong>" },
         { "trigger": "style", "contents": "<style type=\"${1:text/css}\">$2</style>" },
         { "trigger": "sub", "contents": "<sub>$1</sub>" },

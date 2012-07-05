@@ -155,7 +155,7 @@ class TagCompletions(sublime_plugin.EventListener):
             ("section\tHTML5", "section>$1</section>"),
             ("select\tTag", "select>$1</select>"),
             ("small\tTag", "small>$1</small>"),
-            ("span\tTag", "span$1>$2</span>"),
+            ("span\tTag", "span>$1</span>"),
             ("strong\tTag", "strong>$1</strong>"),
             ("style\tTag", "style type=\"${1:text/css}\">$2</style>"),
             ("sub\tTag", "sub>$1</sub>"),
