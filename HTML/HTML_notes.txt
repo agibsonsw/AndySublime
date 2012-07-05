@@ -9,4 +9,12 @@ those ones where additional attributes are nearly
 always added - such as DIV, SPAN, etc..
 
 For the moment I've added action and method to the 
-form' completion, and type to input.
+form' completion, and type to input. These also 
+include value-completions. That is, type g for get, 
+p for post, c for checkbox, etc.
+
+The canvas tag includes width and height attributes 
+as these are essential.
+
+I've added the href attribute to 'base' and src to 
+'iframe'.
