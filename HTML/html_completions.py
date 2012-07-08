@@ -62,7 +62,7 @@ class TagCompletions(sublime_plugin.EventListener):
     def on_query_completions(self, view, prefix, locations):
         # Only trigger within HTML
         if not view.match_selector(locations[0],
-                "text.html - source"):
+                "text.html -source -meta.tag, punctuation.definition.tag.begin"):
             return []
 
         pt = locations[0] - len(prefix) - 1
@@ -123,10 +123,11 @@ class TagCompletions(sublime_plugin.EventListener):
             ("header\tHTML5", "header>$1</header>"),
             ("hgroup\tHTML5", "hgroup>$1</hgroup>"),
             ("hr\tTag", "hr>"),
+            ("html\tTag", "html>$1</html>"),
             ("i\tTag", "i>$1</i>"),
             ("iframe\tTag", "iframe src=\"$1\"></iframe>"),
             ("img\tTag", "img src=\"$1\">"),
-            ("input\tTag", "input type=\"$1${1/(b$)|(c$)|(dat$)|(da$)|(d$)|(e$)|(f$)|(h$)|(i$)|(m$)|(n$)|(p$)|(ra$)|(r$)|(su$)|(s$)|(te$)|(ti$)|(t$)|(u$)|(w$)|.*/?1:utton:?2:heckbox:?3:etime-local:?4:tetime:?5:ate:?6:mail:?7:ile:?8:idden:?9:mage:?10:onth:?11:umber:?12:assword:?13:nge:?14:adio:?15:bmit:?16:elect:?17:xtarea:?18:me:?19:ext:?20:rl:?21:eek/i}\">"),
+            ("input\tTag", "input type=\"$1${1/(b$)|(co$)|(c$)|(dat$)|(da$)|(d$)|(e$)|(f$)|(h$)|(i$)|(m$)|(n$)|(p$)|(ra$)|(r$)|(su$)|(se$)|(s$)|(te$)|(ti$)|(t$)|(u$)|(w$)|.*/?1:utton:?2:lor:?3:heckbox:?4:etime-local:?5:tetime:?6:ate:?7:mail:?8:ile:?9:idden:?10:mage:?11:onth:?12:umber:?13:assword:?14:nge:?15:adio:?16:bmit:?17:arch:?18:elect:?19:xtarea:?20:me:?21:ext:?22:rl:?23:eek/i}\">"),
             ("ins\tTag", "ins>$1</ins>"),
             ("kbd\tTag", "kbd>$1</kbd>"),
             ("keygen\tHTML5", "keygen>$1</keygen>"),
@@ -159,6 +160,7 @@ class TagCompletions(sublime_plugin.EventListener):
             ("strong\tTag", "strong>$1</strong>"),
             ("style\tTag", "style type=\"${1:text/css}\">$2</style>"),
             ("sub\tTag", "sub>$1</sub>"),
+            ("summary\tHTML5", "summary>$1</summary>"),
             ("sup\tTag", "sup>$1</sup>"),
             ("table\tTag", "table>$1</table>"),
             ("tbody\tTag", "tbody>$1</tbody>"),
