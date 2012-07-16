@@ -153,7 +153,7 @@
         { "trigger": "text\tbody (depr)", "contents": "text=\"$1\"$0" },
         { "trigger": "title", "contents": "title=\"$1\"$0" },
         { "trigger": "translate\tHTML5", "contents": "translate=\"${1:yes/no}${1/(y$)|(n$)|.*/?1:es:?2:o/i}\"$0" },
-        { "trigger": "type", "contents": "type=\"$1\"$0" },
+        { "trigger": "type", "contents": "type=\"${1:text}${1/(b$)|(co$)|(c$)|(dat$)|(da$)|(d$)|(e$)|(f$)|(h$)|(i$)|(m$)|(n$)|(p$)|(ra$)|(r$)|(su$)|(se$)|(s$)|(te$)|(ti$)|(t$)|(u$)|(w$)|.*/?1:utton:?2:lor:?3:heckbox:?4:etime-local:?5:tetime:?6:ate:?7:mail:?8:ile:?9:idden:?10:mage:?11:onth:?12:umber:?13:assword:?14:nge:?15:adio:?16:bmit:?17:arch:?18:elect:?19:xtarea:?20:me:?21:ext:?22:rl:?23:eek/i}\"$0" },
         { "trigger": "usemap", "contents": "usemap=\"#${1:mapname}\"$0" },
         { "trigger": "valign", "contents": "valign=\"$1${1/(t$)|(m$)|(ba$)|(b$)|.*/?1:op:?2:iddle:?3:seline:?4:ottom/i}\"$0" },
         { "trigger": "value", "contents": "value=\"$1\"$0" },
